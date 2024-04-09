@@ -56,11 +56,11 @@ int main()
         }
         imshow("Faces Detected", new_image);
         out.write(new_image);
-        char c = (char) waitKey(60);
+        char c = (char) waitKey(30);
         if (c == 27) break;
         if (c == 32 || start){
             while(true){
-                char c = (char) waitKey(60);
+                char c = (char) waitKey(30);
                 if (c == 32) break;
             }
             start = false;
